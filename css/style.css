@@ -1,0 +1,392 @@
+/* General  Styles:*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+.social-icons a{
+    display: inline-block;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 5px;
+    color: white;
+/*    wysrodkowanie*/
+    line-height: 40px;
+    border: 1px solid white;
+}
+
+
+/*Nawigacja Start: */
+
+#main-nav {
+    text-align: right;
+    background-color: rgba(0, 255, 255, 0.5);
+    position: fixed;
+    /*    dzieki width 100% menu wskoczylo na gore bez marginu*/
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 11000000;
+}
+
+#main-nav ul {
+    margin: 0;
+
+}
+
+#main-nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 20px;
+
+
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#main-nav ul li a:hover {
+    color: black;
+}
+
+/*Nawigacja Stop */
+
+
+
+/*Header*/
+
+header#main-header {
+
+    background-image: url("../img/header-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+
+}
+
+header#main-header > div.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Roboto' sans-serif;
+
+
+}
+
+
+header#main-header > div.content > h1 {
+    /*    dzieki margin:0 nie ma odstepu nad menu*/
+    margin: 0;
+    font-size: 8em;
+    font-weight: lighter;
+    font-family: 'Roboto' sans-serif;
+
+}
+
+header#main-header > div.content > h1 > span {
+    color: green;
+
+}
+
+header#main-header > div.content > h2 {}
+
+/*Sekcja o mnie początek*/
+
+#about-me {
+    background-color: #f9fcfe;
+}
+
+
+#about-me h2 {
+    color: black;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#about-me > h2 > span {
+    color: green;
+}
+
+div.about-position {
+    position: relative;
+}
+
+div.about-position > figure {
+    display: block;
+    position: relative;
+    margin-left: 4em;
+    width: 30%;
+    transform: translateX(40px);
+    float: left;
+}
+
+div.about-position > figure > img {
+    max-width: 100%;
+    padding: 10px;
+
+}
+
+.about-content {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    right: 0;
+    margin: 0 20px;
+    padding: 0 20px;
+
+
+
+}
+
+.about-content > p {
+    color: black;
+    text-align: justify;
+    padding-right: 20px;
+
+
+}
+
+/*sekcja o mnie koniec*/
+
+/*sekcja moje umiejętności start*/
+
+#umiejetnosci {
+    background-color: #f9fcfe;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+}
+
+#umiejetnosci > h2 {
+    color: black;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#umiejetnosci > h2 > span {
+    color: green;
+}
+
+#umiejetnosci > p {
+    color: black;
+    text-align: center;
+}
+section#umiejetnosci div#skills-icons {
+	text-align: center;
+}
+
+section#umiejetnosci #skills-icons figure {
+	display: inline-block;
+}
+
+section#umiejetnosci #skills-icons figure img {
+	margin-bottom: 15px;
+}
+
+
+/*koniec moje umiejetnosci*/
+
+/*start portfolio*/
+
+#moje-portfolio {
+    background-color: #f9fcfe;
+    display: block;
+    position: relative;
+    width: 100%;
+    /*    overflow: hidden;*/
+}
+
+#moje-portfolio > h2 {
+    color: black;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#moje-portfolio > h2 > span {
+    color: green;
+}
+
+.portfolio {
+    width: 100%;
+
+}
+
+.port {
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.3%;
+    height: 300px;
+    float: left;
+}
+
+
+.port-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+.port-2 {
+    background-image: url(../img/portfolio2.jpg);
+
+}
+
+.port-3 {
+    background-image: url(../img/portfolio4.jpg);
+
+}
+
+.clear {
+    clear: both;
+}
+
+
+.mask {
+    height: 100%;
+    background-color: rgba(63, 63, 119, 0.6);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    position: relative;
+}
+
+.mask:hover {
+    opacity: 1;
+
+}
+
+.border {
+    border: 2px solid white;
+    height: 100%;
+    
+}
+.mask p {
+
+    /*    */
+    /*    opacity: 0;*/
+    color: white;
+    text-align: justify;
+    padding: 5px;
+    height: 100%;
+    margin: 0;
+}
+
+/*
+.mask:hover {
+    opacity: 1;
+}
+*/
+
+/*koniec moje-portfolio*/
+
+
+
+
+
+/*start kontakt*/
+
+#kontakt {
+    background-color: #213b50;
+/*    paddingiem ustawiamy obszar wyswietlania*/
+    padding: 40px;
+}
+
+#kontakt > .box {
+display: inline-block;
+    width: 50%;
+    float: left;
+    color: #fff;
+}
+
+#kontakt > .box form label input:not([type="submit"]),
+#kontakt > .box form textarea {
+    width: 100%;
+    background-color: #336699;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+#kontakt > .box form label input[type="submit"] {
+    width: 20%;
+    background-color: limegreen;
+    border: 0;
+}
+.clear {
+    clear: both;
+}
+.box > h2 {
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: left;;
+    margin: 0;
+    padding: 10px;
+}
+
+.box > h2 > span {
+    color: green;
+}
+
+.box > address  > a{
+    color: green;
+}
+
+.box > address > p > a > {
+    color: white;
+}
+
+}
+.formularz > form > {
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+/* Section Contact - Stop */
+
+/* Footer Styles - Start */
+footer#main-footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #13212c;
+}
+
+footer#main-footer p {
+    margin: 0;
+}
+
+/* Footer Styles - Stop */

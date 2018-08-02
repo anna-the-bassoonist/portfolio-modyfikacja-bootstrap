@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--   najpierw charset-->
+    <meta charset="UTF-8">
+    <!--    potem viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Portfolio</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <!--   potem Normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--Google Fonts Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+
+    <!--   Font Awesome Styles-->
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+
+
+    <!--Main Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive style -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+
+
+    <!--// Main Navigation Start -->
+    <nav id="main-nav">
+        <ul>
+            <li class="menu-item">
+                <a href="#about-me">o mnie</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#umiejetnosci">umiejętności</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#moje-portfolio">portfolio</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#kontakt">kontakt</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--    Main Navigation Stop -->
+
+
+
+    <!--   Header start -->
+
+    <header id="main-header">
+        <div class="content">
+            <h1>Anna <span>Toeplitz</span> </h1>
+            <h2>Front-End Developer</h2>
+        </div>
+    </header>
+
+    <!--Header stop-->
+
+
+    <!-- About Section Start -->
+
+    <section id="about-me">
+        <h2>
+            O <span>mnie</span>
+        </h2>
+
+        <div class="about-position">
+
+            <figure>
+                <img src="img/jan-nowak.jpg" alt="o-mnie">
+            </figure>
+            <article class="about-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fuga nostrum, fugiat laborum porro natus ipsum saepe perferendis eligendi aspernatur sequi minus quas odio eius repellat sit facilis consectetur sed officia numquam possimus perspiciatis omnis? A voluptatem eveniet perspiciatis autem aliquid. Mollitia ullam distinctio repudiandae explicabo aperiam quae sit debitis.</p>
+            </article>
+        </div>
+    </section>
+    <!-- About Section stop -->
+
+
+    <!-- Skills Section Start -->
+    <section id="umiejetnosci">
+        <h2>Moje <span>umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat necessitalkjsflkjgfklfjg slkjf lksfdj d;lk lkjlkj dlkjf lkjtibus rem, fuga molestiae exercitationem? Eos reiciendis quisquam autem nesciunt officiis.</p>
+
+        <div id="skills-icons">
+            <figure class="skills-icons-item">
+                <img src="icons/html5.png" alt="Ikona HTML5">
+                <figcaption>HTML5</figcaption>
+            </figure>
+            <figure class="skills-icons-item">
+                <img src="icons/css3.png" alt="Ikona CSS3">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            <figure class="skills-icons-item">
+                <img src="icons/js.png" alt="Ikona JS">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="skills-icons-item">
+                <img src="icons/jquery.png" alt="Ikona jQuery">
+                <figcaption>jQuery</figcaption>
+            </figure>
+        </div>
+
+    </section>
+    <!-- Skills Section stop -->
+
+
+
+    <!-- Portfolio Section Start -->
+    <section id="moje-portfolio">
+        <h2>Moje <span>portfolio</span></h2>
+
+        <div class="portfolio">
+            <div class="port port-1">
+                <div class="mask">
+                    <div class="border">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="port port-2">
+                <div class="mask">
+                    <div class="border">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="port port-3">
+                <div class="mask">
+                    <div class="border">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section end -->
+
+
+    <!--Contact start-->
+
+
+    <section id="kontakt">
+
+        <div class="box">
+            <h2>Jan <span>Nowak</span></h2>
+            <address>
+                ul. Mostowa 6/13<br>
+                31-061 Kraków <br><br>
+                tel:606745759 <br>
+                e-mail:<a href="mailto:example@example.pl">example@example.pl</a>
+            </address>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <form action="php" method="post">
+                <label for="name"><input type="text" name="name" id="name" placeholder="Imię i nazwisko"></label>
+                <label for="email"><input type="email" name="mail" id="email" placeholder="E-mail"></label>
+                <textarea name="message" maxlength="100" placeholder="Treść wiadomości"></textarea>
+                <label for="send"><input type="submit" value="wyślij" id="send"></label>
+            </form>
+        </div>
+        <div class="clear"></div>
+        <!--
+        <div class="icons222">
+
+        </div>
+-->
+    </section>
+    <!-- Stop Section Contact -->
+
+
+
+    <!-- Footer Start -->
+    <footer id="main-footer">
+        <p>Copyrights &copy; A T</p>
+    </footer>
+
+    <!-- Footer Stop -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
