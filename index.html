@@ -9,7 +9,7 @@
 
     <title>Portfolio</title>
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!--   potem Normalize css -->
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -32,6 +32,7 @@
 
 
     <!--// Main Navigation Start -->
+    <!--
     <nav id="main-nav">
         <ul>
             <li class="menu-item">
@@ -51,7 +52,30 @@
             </li>
         </ul>
     </nav>
+-->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span>Menu</span>
+  </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">o mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#umiejetnosci">umiejętności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#moje-portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!--    Main Navigation Stop -->
 
 
@@ -75,41 +99,43 @@
             O <span>mnie</span>
         </h2>
 
-        <div class="about-position">
-
-            <figure>
-                <img src="img/jan-nowak.jpg" alt="o-mnie">
-            </figure>
-            <article class="about-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fuga nostrum, fugiat laborum porro natus ipsum saepe perferendis eligendi aspernatur sequi minus quas odio eius repellat sit facilis consectetur sed officia numquam possimus perspiciatis omnis? A voluptatem eveniet perspiciatis autem aliquid. Mollitia ullam distinctio repudiandae explicabo aperiam quae sit debitis.</p>
-            </article>
+        <div class="container">
+            <div class="row about-position">
+                <figure class="col-lg-6 col-sm-12 col-12">
+                    <img src="img/jan-nowak.jpg" alt="o-mnie">
+                </figure>
+                <article class="col-lg-6 col-sm-12 col-12 about-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fuga nostrum, fugiat laborum porro natus ipsum saepe perferendis eligendi aspernatur sequi minus quas odio eius repellat sit facilis consectetur sed officia numquam possimus perspiciatis omnis? A voluptatem eveniet perspiciatis autem aliquid. Mollitia ullam distinctio repudiandae explicabo aperiam quae sit debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam magni enim ipsa dignissimos doloremque corrupti rerum accusamus quod eum, earum, at distinctio minus. Fuga ipsum omnis iste, repellat libero. Odit.</p>
+                </article>
+            </div>
         </div>
     </section>
     <!-- About Section stop -->
 
 
     <!-- Skills Section Start -->
-    <section id="umiejetnosci">
+    <section id="umiejetnosci" class="text-center">
         <h2>Moje <span>umiejętności</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat necessitalkjsflkjgfklfjg slkjf lksfdj d;lk lkjlkj dlkjf lkjtibus rem, fuga molestiae exercitationem? Eos reiciendis quisquam autem nesciunt officiis.</p>
-
-        <div id="skills-icons">
-            <figure class="skills-icons-item">
-                <img src="icons/html5.png" alt="Ikona HTML5">
-                <figcaption>HTML5</figcaption>
-            </figure>
-            <figure class="skills-icons-item">
-                <img src="icons/css3.png" alt="Ikona CSS3">
-                <figcaption>CSS3</figcaption>
-            </figure>
-            <figure class="skills-icons-item">
-                <img src="icons/js.png" alt="Ikona JS">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure class="skills-icons-item">
-                <img src="icons/jquery.png" alt="Ikona jQuery">
-                <figcaption>jQuery</figcaption>
-            </figure>
+        <div class="container">
+            <div id="skills-icons" class="row text-center">
+                <figure class="skills-icons-item col-lg-3 col-sm-6 col-6">
+                    <img src="icons/html5.png" alt="Ikona HTML5">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <figure class="skills-icons-item col-lg-3 col-sm-6 col-6">
+                    <img src="icons/css3.png" alt="Ikona CSS3">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure class="skills-icons-item col-lg-3 col-sm-6 col-6">
+                    <img src="icons/js.png" alt="Ikona JS">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure class="skills-icons-item col-lg-3 col-sm-6 col-6">
+                    <img src="icons/jquery.png" alt="Ikona jQuery">
+                    <figcaption>jQuery</figcaption>
+                </figure>
+            </div>
         </div>
 
     </section>
@@ -118,32 +144,33 @@
 
 
     <!-- Portfolio Section Start -->
-    <section id="moje-portfolio">
+    <section id="moje-portfolio" class="text-center">
         <h2>Moje <span>portfolio</span></h2>
 
         <div class="portfolio">
-            <div class="port port-1">
-                <div class="mask">
-                    <div class="border">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+            <div class="row">
+                <div class="port port-1 col-lg-4 col-sm-6 col-12">
+                    <div class="mask">
+                        <div class="border">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="port port-2 col-lg-4 col-sm-6 col-12">
+                    <div class="mask">
+                        <div class="border">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="port port-3 col-lg-4 col-sm-12 col-12">
+                    <div class="mask">
+                        <div class="border">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="port port-2">
-                <div class="mask">
-                    <div class="border">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="port port-3">
-                <div class="mask">
-                    <div class="border">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsum quos necessitatibus accusamus porro molestiae recusandae earum vitae commodi quasi.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
         </div>
     </section>
 
@@ -153,39 +180,39 @@
     <!--Contact start-->
 
 
-    <section id="kontakt">
-
-        <div class="box">
-            <h2>Jan <span>Nowak</span></h2>
-            <address>
+    <section id="kontakt" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="box col-lg-6 col-sm-12 col-12">
+                    <h2>Jan <span>Nowak</span></h2>
+                    <address>
                 ul. Mostowa 6/13<br>
                 31-061 Kraków <br><br>
-                tel:606745759 <br>
-                e-mail:<a href="mailto:example@example.pl">example@example.pl</a>
+                tel: 606745759 <br>
+                e-mail:<a href="mailto:example@example.pl"> example@example.pl</a>
             </address>
-            <div class="social-icons">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="box col-lg-6 col-sm-12 col-12">
+                   <div class="container">
+                    <form action="php" method="post" class="row">
+                        <label class=" col-lg-12 col-sm-12 col-12"for="name"><input class="input" type="text" name="name" id="name" placeholder="Imię i nazwisko"></label>
+                        <label class=" col-lg-12 col-sm-12 col-12" for="email"><input class="input"type="email" name="mail" id="email" placeholder="E-mail"></label>
+                        <textarea class="col-lg-12 col-sm-12 col-12 textarea input" name="message" placeholder="Treść wiadomości"></textarea>
+                        <label class="col-lg-12 col-sm-12 col-12" for="send"><input type="submit" value="wyślij" id="send"></label>
+                    </form>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
-
         </div>
-
-        <div class="box">
-            <form action="php" method="post">
-                <label for="name"><input type="text" name="name" id="name" placeholder="Imię i nazwisko"></label>
-                <label for="email"><input type="email" name="mail" id="email" placeholder="E-mail"></label>
-                <textarea name="message" maxlength="100" placeholder="Treść wiadomości"></textarea>
-                <label for="send"><input type="submit" value="wyślij" id="send"></label>
-            </form>
-        </div>
-        <div class="clear"></div>
-        <!--
-        <div class="icons222">
-
-        </div>
--->
     </section>
     <!-- Stop Section Contact -->
 
